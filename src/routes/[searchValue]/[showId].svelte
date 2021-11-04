@@ -28,7 +28,7 @@
 	{:then showInfo}
 		<div class="hero rounded-xl">
 			<div class="flex-col hero-content lg:flex-row-reverse">
-				<img src={showInfo.image.original} class="max-w-sm rounded-lg shadow-2xl" />
+				<img src={showInfo.image.original} class="max-w-sm rounded-lg shadow-2xl" alt="{showInfo.name} cover"/>
 				<div>
 					<div class="flex mb-5">
 						<h1 class="text-6xl font-bold max-w-lg flex-1">
