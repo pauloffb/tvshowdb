@@ -30,9 +30,21 @@
 			<div class="flex-col hero-content lg:flex-row-reverse">
 				<img src={showInfo.image.original} class="max-w-sm rounded-lg shadow-2xl" />
 				<div>
-					<h1 class="mb-5 text-6xl font-bold max-w-lg">
-						{showInfo.name}
-					</h1>
+					<div class="flex mb-5">
+						<h1 class="text-6xl font-bold max-w-lg flex-1">
+							{showInfo.name}
+						</h1>
+						{#if showInfo.rating.average}
+						<div class="border bg-gray-50 p-2 rounded-lg flex flex-col text-center">
+							<div class="font-black text-lg">{showInfo.rating.average}</div>
+							<span class="text-xs text-gray-500 font-medium">Average Rating</span>
+						</div>
+						{/if}
+						
+							
+
+					</div>
+					
 					<ul class="space-x-1">
 						{#if showInfo.status == 'Ended'}
 							<div class="badge badge-lg badge-error font-bold">
